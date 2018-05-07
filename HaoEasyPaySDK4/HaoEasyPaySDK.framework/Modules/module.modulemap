@@ -1,0 +1,6 @@
+framework module HaoEasyPaySDK {
+  umbrella header "HaoEasyPaySDK.h"
+
+  export *
+  module * { export * }
+}
