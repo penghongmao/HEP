@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		092FB21120BE802500D47F6D /* HaoEasyPaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092FB20F20BE802400D47F6D /* HaoEasyPaySDK.framework */; };
+		092FB21220BE802500D47F6D /* HaoEasyPaySDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 092FB21020BE802400D47F6D /* HaoEasyPaySDKBundle.bundle */; };
 		09826CF520849B7200087919 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09826CF420849B7200087919 /* AppDelegate.m */; };
 		09826CF820849B7200087919 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09826CF720849B7200087919 /* ViewController.m */; };
 		09826CFB20849B7200087919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09826CF920849B7200087919 /* Main.storyboard */; };
@@ -19,7 +21,9 @@
 		09826D2B2084A38000087919 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09826D2A2084A38000087919 /* BaseViewController.m */; };
 		09826D322084A59800087919 /* SFBMDeveloperController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09826D2D2084A59800087919 /* SFBMDeveloperController.m */; };
 		09826D332084A59800087919 /* SFBMDeveloperController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09826D2E2084A59800087919 /* SFBMDeveloperController.xib */; };
+		09826E192084B2DC00087919 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09826DB62084B2DC00087919 /* WXApiManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		09826E1A2084B2DC00087919 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09826DB82084B2DC00087919 /* README.txt */; };
+		09826E1B2084B2DC00087919 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09826DBA2084B2DC00087919 /* libWeChatSDK.a */; };
 		09826E1C2084B2DC00087919 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09826DBC2084B2DC00087919 /* libcrypto.a */; };
 		09826E1D2084B2DC00087919 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 09826DBD2084B2DC00087919 /* AlipaySDK.bundle */; };
 		09826E1E2084B2DC00087919 /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 09826DBF2084B2DC00087919 /* openssl_wrapper.m */; };
@@ -28,6 +32,7 @@
 		09826E212084B2DC00087919 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 09826DC72084B2DC00087919 /* base64.m */; };
 		09826E222084B2DC00087919 /* RSADataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 09826DC92084B2DC00087919 /* RSADataSigner.m */; };
 		09826E232084B2DC00087919 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09826DCA2084B2DC00087919 /* libssl.a */; };
+		09826E242084B2DC00087919 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09826E172084B2DC00087919 /* AlipaySDK.framework */; };
 		09826E272084B82E00087919 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 09826E262084B82E00087919 /* libc++.tbd */; };
 		09826E292084B84000087919 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 09826E282084B84000087919 /* libz.tbd */; };
 		09826E2B2084B85000087919 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09826E2A2084B84F00087919 /* SystemConfiguration.framework */; };
@@ -41,19 +46,8 @@
 		09826E3B2084B8ED00087919 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09826E3A2084B8ED00087919 /* CoreMotion.framework */; };
 		09826E3D2084BBEA00087919 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 09826E3C2084BBEA00087919 /* libsqlite3.0.tbd */; };
 		09826E3F2084BC0400087919 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09826E3E2084BC0400087919 /* Security.framework */; };
-		09826F512085EC6900087919 /* payment_alipay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09826F502085EC6900087919 /* payment_alipay@2x.png */; };
-		09826F532085EC7400087919 /* payment_wechat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09826F522085EC7400087919 /* payment_wechat@2x.png */; };
-		0982723320886BF000087919 /* checkbox_normal5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0982723120886BEF00087919 /* checkbox_normal5@2x.png */; };
-		0982723420886BF000087919 /* checkbox_selected4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0982723220886BEF00087919 /* checkbox_selected4@2x.png */; };
 		0982723B2089DFB900087919 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 098272392089DFB800087919 /* MBProgressHUD.m */; };
-		09827248208F28E000087919 /* finished6.png in Resources */ = {isa = PBXBuildFile; fileRef = 09827247208F28E000087919 /* finished6.png */; };
-		0982724A208F28FE00087919 /* failure7.png in Resources */ = {isa = PBXBuildFile; fileRef = 09827249208F28FE00087919 /* failure7.png */; };
-		098273A220941F1800087919 /* MostCommonIndicatorShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 098273A020941F1800087919 /* MostCommonIndicatorShow.m */; };
-		098273A72094202900087919 /* HaoEasyPaySDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 098273A62094202900087919 /* HaoEasyPaySDKBundle.bundle */; };
-		098273AC2094273D00087919 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 098273AB2094273D00087919 /* WXApiManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		098273B1209440F700087919 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09826E172084B2DC00087919 /* AlipaySDK.framework */; };
-		098273B22094416600087919 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09826DBA2084B2DC00087919 /* libWeChatSDK.a */; };
-		098274C2209FF62000087919 /* HaoEasyPaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098274C1209FF62000087919 /* HaoEasyPaySDK.framework */; };
+		098273C62094596400087919 /* MostCommonIndicatorShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 098273C52094596400087919 /* MostCommonIndicatorShow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		092FB20F20BE802400D47F6D /* HaoEasyPaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HaoEasyPaySDK.framework; sourceTree = "<group>"; };
+		092FB21020BE802400D47F6D /* HaoEasyPaySDKBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HaoEasyPaySDKBundle.bundle; sourceTree = "<group>"; };
 		09826CF020849B7200087919 /* EasyPayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyPayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09826CF320849B7200087919 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09826CF420849B7200087919 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,7 +94,9 @@
 		09826D2D2084A59800087919 /* SFBMDeveloperController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBMDeveloperController.m; sourceTree = "<group>"; };
 		09826D2E2084A59800087919 /* SFBMDeveloperController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFBMDeveloperController.xib; sourceTree = "<group>"; };
 		09826D302084A59800087919 /* SFBMDeveloperController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBMDeveloperController.h; sourceTree = "<group>"; };
+		09826DB22084B2DC00087919 /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
 		09826DB42084B2DC00087919 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		09826DB62084B2DC00087919 /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
 		09826DB72084B2DC00087919 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		09826DB82084B2DC00087919 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		09826DB92084B2DC00087919 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
@@ -206,20 +204,10 @@
 		09826E3A2084B8ED00087919 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		09826E3C2084BBEA00087919 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		09826E3E2084BC0400087919 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		09826F502085EC6900087919 /* payment_alipay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "payment_alipay@2x.png"; sourceTree = "<group>"; };
-		09826F522085EC7400087919 /* payment_wechat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "payment_wechat@2x.png"; sourceTree = "<group>"; };
-		0982723120886BEF00087919 /* checkbox_normal5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox_normal5@2x.png"; sourceTree = "<group>"; };
-		0982723220886BEF00087919 /* checkbox_selected4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox_selected4@2x.png"; sourceTree = "<group>"; };
 		098272392089DFB800087919 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		0982723A2089DFB800087919 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		09827247208F28E000087919 /* finished6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finished6.png; sourceTree = "<group>"; };
-		09827249208F28FE00087919 /* failure7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = failure7.png; sourceTree = "<group>"; };
-		098273A020941F1800087919 /* MostCommonIndicatorShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostCommonIndicatorShow.m; sourceTree = "<group>"; };
-		098273A120941F1800087919 /* MostCommonIndicatorShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostCommonIndicatorShow.h; sourceTree = "<group>"; };
-		098273A62094202900087919 /* HaoEasyPaySDKBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HaoEasyPaySDKBundle.bundle; sourceTree = "<group>"; };
-		098273AA2094273D00087919 /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
-		098273AB2094273D00087919 /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
-		098274C1209FF62000087919 /* HaoEasyPaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HaoEasyPaySDK.framework; sourceTree = "<group>"; };
+		098273C42094596400087919 /* MostCommonIndicatorShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostCommonIndicatorShow.h; sourceTree = "<group>"; };
+		098273C52094596400087919 /* MostCommonIndicatorShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostCommonIndicatorShow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,8 +215,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				098273B22094416600087919 /* libWeChatSDK.a in Frameworks */,
-				098273B1209440F700087919 /* AlipaySDK.framework in Frameworks */,
+				092FB21120BE802500D47F6D /* HaoEasyPaySDK.framework in Frameworks */,
 				09826E2D2084B86100087919 /* CoreTelephony.framework in Frameworks */,
 				09826E3F2084BC0400087919 /* Security.framework in Frameworks */,
 				09826E3D2084BBEA00087919 /* libsqlite3.0.tbd in Frameworks */,
@@ -236,7 +223,6 @@
 				09826E392084B8DD00087919 /* CFNetwork.framework in Frameworks */,
 				09826E372084B8BA00087919 /* Foundation.framework in Frameworks */,
 				09826E352084B8A600087919 /* UIKit.framework in Frameworks */,
-				098274C2209FF62000087919 /* HaoEasyPaySDK.framework in Frameworks */,
 				09826E332084B89A00087919 /* CoreGraphics.framework in Frameworks */,
 				09826E312084B88E00087919 /* CoreText.framework in Frameworks */,
 				09826E2F2084B87900087919 /* QuartzCore.framework in Frameworks */,
@@ -244,6 +230,8 @@
 				09826E292084B84000087919 /* libz.tbd in Frameworks */,
 				09826E272084B82E00087919 /* libc++.tbd in Frameworks */,
 				09826E1C2084B2DC00087919 /* libcrypto.a in Frameworks */,
+				09826E242084B2DC00087919 /* AlipaySDK.framework in Frameworks */,
+				09826E1B2084B2DC00087919 /* libWeChatSDK.a in Frameworks */,
 				09826E232084B2DC00087919 /* libssl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +253,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		092FB20E20BE802400D47F6D /* HaoEasyPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				092FB20F20BE802400D47F6D /* HaoEasyPaySDK.framework */,
+				092FB21020BE802400D47F6D /* HaoEasyPaySDKBundle.bundle */,
+			);
+			path = HaoEasyPaySDK;
+			sourceTree = "<group>";
+		};
 		09826CE720849B7200087919 = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +289,10 @@
 				09826D2C2084A58600087919 /* EasyPay */,
 				09826CF320849B7200087919 /* AppDelegate.h */,
 				09826CF420849B7200087919 /* AppDelegate.m */,
+				098272392089DFB800087919 /* MBProgressHUD.m */,
+				0982723A2089DFB800087919 /* MBProgressHUD.h */,
+				098273C42094596400087919 /* MostCommonIndicatorShow.h */,
+				098273C52094596400087919 /* MostCommonIndicatorShow.m */,
 				09826CF620849B7200087919 /* ViewController.h */,
 				09826CF720849B7200087919 /* ViewController.m */,
 				09826D2520849D0600087919 /* BaseNavigationController.h */,
@@ -329,9 +330,7 @@
 		09826D2C2084A58600087919 /* EasyPay */ = {
 			isa = PBXGroup;
 			children = (
-				09826F472085EA8D00087919 /* Image */,
 				09826DB02084B2DC00087919 /* Third */,
-				09826D352084A66500087919 /* View */,
 				09826D302084A59800087919 /* SFBMDeveloperController.h */,
 				09826D2D2084A59800087919 /* SFBMDeveloperController.m */,
 				09826D2E2084A59800087919 /* SFBMDeveloperController.xib */,
@@ -339,18 +338,10 @@
 			path = EasyPay;
 			sourceTree = "<group>";
 		};
-		09826D352084A66500087919 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				098272382089DFB800087919 /* MBProgressHUD */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		09826DB02084B2DC00087919 /* Third */ = {
 			isa = PBXGroup;
 			children = (
-				098273A320941F8D00087919 /* HaoEasyPaySDK */,
+				092FB20E20BE802400D47F6D /* HaoEasyPaySDK */,
 				09826DB12084B2DC00087919 /* WXPaySDK */,
 				09826DBB2084B2DC00087919 /* AlipaySDK */,
 			);
@@ -362,8 +353,8 @@
 			children = (
 				09826DB42084B2DC00087919 /* WXApi.h */,
 				09826DB72084B2DC00087919 /* WXApiObject.h */,
-				098273AA2094273D00087919 /* WXApiManager.h */,
-				098273AB2094273D00087919 /* WXApiManager.m */,
+				09826DB22084B2DC00087919 /* WXApiManager.h */,
+				09826DB62084B2DC00087919 /* WXApiManager.m */,
 				09826DB82084B2DC00087919 /* README.txt */,
 				09826DB92084B2DC00087919 /* WechatAuthSDK.h */,
 				09826DBA2084B2DC00087919 /* libWeChatSDK.a */,
@@ -504,39 +495,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		09826F472085EA8D00087919 /* Image */ = {
-			isa = PBXGroup;
-			children = (
-				0982723120886BEF00087919 /* checkbox_normal5@2x.png */,
-				0982723220886BEF00087919 /* checkbox_selected4@2x.png */,
-				09826F522085EC7400087919 /* payment_wechat@2x.png */,
-				09826F502085EC6900087919 /* payment_alipay@2x.png */,
-				09827247208F28E000087919 /* finished6.png */,
-				09827249208F28FE00087919 /* failure7.png */,
-			);
-			path = Image;
-			sourceTree = "<group>";
-		};
-		098272382089DFB800087919 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				098272392089DFB800087919 /* MBProgressHUD.m */,
-				0982723A2089DFB800087919 /* MBProgressHUD.h */,
-				098273A120941F1800087919 /* MostCommonIndicatorShow.h */,
-				098273A020941F1800087919 /* MostCommonIndicatorShow.m */,
-			);
-			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
-		098273A320941F8D00087919 /* HaoEasyPaySDK */ = {
-			isa = PBXGroup;
-			children = (
-				098274C1209FF62000087919 /* HaoEasyPaySDK.framework */,
-				098273A62094202900087919 /* HaoEasyPaySDKBundle.bundle */,
-			);
-			path = HaoEasyPaySDK;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -641,18 +599,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				09826D0020849B7500087919 /* LaunchScreen.storyboard in Resources */,
-				098273A72094202900087919 /* HaoEasyPaySDKBundle.bundle in Resources */,
+				092FB21220BE802500D47F6D /* HaoEasyPaySDKBundle.bundle in Resources */,
 				09826CFD20849B7500087919 /* Assets.xcassets in Resources */,
 				09826E1D2084B2DC00087919 /* AlipaySDK.bundle in Resources */,
-				09826F532085EC7400087919 /* payment_wechat@2x.png in Resources */,
-				0982723320886BF000087919 /* checkbox_normal5@2x.png in Resources */,
 				09826D332084A59800087919 /* SFBMDeveloperController.xib in Resources */,
 				09826CFB20849B7200087919 /* Main.storyboard in Resources */,
 				09826E1A2084B2DC00087919 /* README.txt in Resources */,
-				09826F512085EC6900087919 /* payment_alipay@2x.png in Resources */,
-				09827248208F28E000087919 /* finished6.png in Resources */,
-				0982724A208F28FE00087919 /* failure7.png in Resources */,
-				0982723420886BF000087919 /* checkbox_selected4@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,13 +635,13 @@
 				09826D322084A59800087919 /* SFBMDeveloperController.m in Sources */,
 				09826E202084B2DC00087919 /* NSDataEx.m in Sources */,
 				09826E1F2084B2DC00087919 /* RSADataVerifier.m in Sources */,
+				09826E192084B2DC00087919 /* WXApiManager.m in Sources */,
 				09826CF820849B7200087919 /* ViewController.m in Sources */,
-				098273AC2094273D00087919 /* WXApiManager.m in Sources */,
-				098273A220941F1800087919 /* MostCommonIndicatorShow.m in Sources */,
 				09826E212084B2DC00087919 /* base64.m in Sources */,
 				09826D0320849B7500087919 /* main.m in Sources */,
 				09826E222084B2DC00087919 /* RSADataSigner.m in Sources */,
 				09826CF520849B7200087919 /* AppDelegate.m in Sources */,
+				098273C62094596400087919 /* MostCommonIndicatorShow.m in Sources */,
 				0982723B2089DFB900087919 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -864,8 +816,8 @@
 				DEVELOPMENT_TEAM = MFGM99J6WQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/Third/HaoEasyPaySDK",
 					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/Third/AlipaySDK",
+					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/Third/HaoEasyPaySDK",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=0";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/EasyPayDemo/EasyPay/Third/AlipaySDK";
@@ -877,8 +829,10 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/Third/AlipaySDK",
+					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/第三方库/WXPaySDK",
+					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/第三方库/AlipaySDK",
 					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/Third/WXPaySDK",
+					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/Third/AlipaySDK",
 				);
 				OTHER_LDFLAGS = (
 					"-Objc",
@@ -900,8 +854,8 @@
 				DEVELOPMENT_TEAM = MFGM99J6WQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/Third/HaoEasyPaySDK",
 					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/Third/AlipaySDK",
+					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/Third/HaoEasyPaySDK",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/EasyPayDemo/EasyPay/Third/AlipaySDK";
 				INFOPLIST_FILE = EasyPayDemo/Info.plist;
@@ -912,8 +866,10 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/Third/AlipaySDK",
+					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/第三方库/WXPaySDK",
+					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/第三方库/AlipaySDK",
 					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/Third/WXPaySDK",
+					"$(PROJECT_DIR)/EasyPayDemo/EasyPay/Third/AlipaySDK",
 				);
 				OTHER_LDFLAGS = (
 					"-Objc",

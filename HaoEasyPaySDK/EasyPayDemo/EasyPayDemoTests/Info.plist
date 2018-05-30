@@ -20,5 +20,9 @@
 	<string>1</string>
 	<key>EPAPPID</key>
 	<string>1233554545</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>weixin</string>
+	</array>
 </dict>
 </plist>

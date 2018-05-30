@@ -7,11 +7,11 @@
 //
 
 #import "SFBMDeveloperController.h"
-#import <HaoEasyPaySDK/HaoEasyPaySDK.h>
-//#import <HaoEasyPaySDK/HaoEasyPaySDK.h>
 //#import "HaoEasyPayChannelController.h"
 //#import "EasyPayFailedController.h"
 //#import "EasyPaySuccessController.h"
+#import <HaoEasyPaySDK/HaoEasyPaySDK.h>
+
 #import "Commens.h"
 @interface SFBMDeveloperController ()
 @property (weak, nonatomic) IBOutlet UITextField *body;//支付的标题内容例如“手机充值”
@@ -87,10 +87,7 @@
 if(self.body.text.length>0&&self.mchId.text.length>0&&self.appId.text.length>0&&self.mchOrderNo.text.length>0&&self.amount.text.length>0&&self.appScheme.text.length>0)
     {
         HaoEasyPayChannelController *payVC = [[HaoEasyPayChannelController alloc] init];
-//        payVC.channels = @[@"weixin",@"alipay"];
-//        payVC.channels = @[@"weixin"];
         payVC.channels = @[@"weixin",@"alipay"];
-
         payVC.body = self.body.text;
         payVC.mchId = self.mchId.text;
         payVC.appId = self.appId.text;

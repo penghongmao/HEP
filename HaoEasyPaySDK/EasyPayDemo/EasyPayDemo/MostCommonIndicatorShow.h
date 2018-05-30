@@ -11,11 +11,8 @@
 /**
  *  工程中最常用的一种提示
  *
-
  *  @param message 提示内容
  */
 +(void)showTheMostCommonAlertmessage:(NSString *)message;
-
-
 
 @end

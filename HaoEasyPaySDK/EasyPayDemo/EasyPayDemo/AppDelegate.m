@@ -10,9 +10,6 @@
 //微信支付注册
 #import "WXApi.h"
 #import "WXApiManager.h"
-#import <HaoEasyPaySDK/HaoEasyPaySDK.h>
-
-//#import "WXApiManager.h"
 
 #import <AlipaySDK/AlipaySDK.h>
 #import "Commens.h"
@@ -31,15 +28,15 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     
+
+    self.paySuccess = @"";
+    //获取易支付appId
+//    NSDictionary *infoDic=[[NSBundle mainBundle] infoDictionary];
+//    NSString * EasyPayId = [infoDic valueForKey:@"EasyPayId"];
+//    NSLog(@"EasyPayId==%@",EasyPayId);
+
     //向微信注册
     [WXApi registerApp:WEIXINPAY_appId enableMTA:NO];
-    self.paySuccess = @"";
-
-    //获取易支付appId
-    NSDictionary *infoDic=[[NSBundle mainBundle] infoDictionary];
-    NSString * EasyPayId = [infoDic valueForKey:@"EasyPayId"];
-    NSLog(@"EasyPayId==%@",EasyPayId);
-    
     
     return YES;
 }
@@ -70,26 +67,12 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-//微信支付 商户ios端 回调代码实现
 // 注意:iOS4.2 ~ 9.0使用的 API接口
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation {
-    
-//    NSString *urlStr = [NSString stringWithFormat:@"%@",url];
-//    MYNSLog(@"url0==%@--sourceApplication==%@",url,sourceApplication)
 
-    //微信支付
-//    if ([urlStr containsString:@"ret=0"]) {
-//        [MostCommonIndicatorShow showTheMostCommonAlertmessage:@"支付成功"];
-//        self.paySuccess = @"1";
-//        
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"SFBMpaySecurityControllerPop" object:nil];
-//        return YES;
-//    }else if ([urlStr containsString:@"ret=-2"]){
-//        [MostCommonIndicatorShow showTheMostCommonAlertmessage:@"商户取消支付"];
-//    }
     // 支付跳转支付宝钱包进行支付，处理支付结果
 
     if ([url.host isEqualToString:@"safepay"]) {
@@ -121,16 +104,6 @@
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options
 {
     MYNSLog(@"app端url0==%@",url)
-//    NSString *urlStr = [NSString stringWithFormat:@"%@",url];
-//    if ([urlStr containsString:@"ret=0"]) {
-//        [MostCommonIndicatorShow showTheMostCommonAlertmessage:@"支付成功"];
-//        self.paySuccess = @"1";
-//
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"SFBMpaySecurityControllerPop" object:nil];
-//        return YES;
-//    }else if ([urlStr containsString:@"ret=-2"]){
-//        [MostCommonIndicatorShow showTheMostCommonAlertmessage:@"商户取消支付"];
-//    }
     
     if ([url.host isEqualToString:@"safepay"]) {
         // 支付跳转支付宝钱包进行支付，处理支付结果

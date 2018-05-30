@@ -7,10 +7,8 @@
 //
 
 #import "WXApiManager.h"
-#import <HaoEasyPaySDK/HaoEasyPaySDK.h>
 #import "MostCommonIndicatorShow.h"
-//#import "HaoEasyPaySuccessController.h"
-//#import "HaoEasyPayFailedController.h"
+#import <HaoEasyPaySDK/HaoEasyPaySDK.h>
 @implementation WXApiManager
 
 #pragma mark - LifeCycle
