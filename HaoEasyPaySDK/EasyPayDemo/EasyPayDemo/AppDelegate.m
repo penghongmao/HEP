@@ -10,7 +10,7 @@
 //微信支付注册
 #import "WXApi.h"
 #import "WXApiManager.h"
-
+//支付宝支付
 #import <AlipaySDK/AlipaySDK.h>
 #import "Commens.h"
 #import "MostCommonIndicatorShow.h"
@@ -29,7 +29,7 @@
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     
 
-    self.paySuccess = @"";
+//    self.paySuccess = @"";
     //获取易支付appId
 //    NSDictionary *infoDic=[[NSBundle mainBundle] infoDictionary];
 //    NSString * EasyPayId = [infoDic valueForKey:@"EasyPayId"];
@@ -77,11 +77,11 @@
 
     if ([url.host isEqualToString:@"safepay"]) {
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
-            MYNSLog(@"result0 =2= %@",resultDic);
+//            MYNSLog(@"result0 =2= %@",resultDic);
             NSString *resultStatus = [NSString stringWithFormat:@"%@",[resultDic objectForKey:@"resultStatus"]];
             if ([resultStatus isEqualToString:@"9000"]) {
                 [MostCommonIndicatorShow showTheMostCommonAlertmessage:@"支付成功"];
-                self.paySuccess = @"1";
+//                self.paySuccess = @"1";
 
                 [[NSNotificationCenter defaultCenter] postNotificationName:@"SFBMpaySecurityControllerPop" object:nil];
 
@@ -108,11 +108,11 @@
     if ([url.host isEqualToString:@"safepay"]) {
         // 支付跳转支付宝钱包进行支付，处理支付结果
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
-            MYNSLog(@"result0 =2= %@",resultDic);
+//            MYNSLog(@"result0 =2= %@",resultDic);
             NSString *resultStatus = [NSString stringWithFormat:@"%@",[resultDic objectForKey:@"resultStatus"]];
             if ([resultStatus isEqualToString:@"9000"]) {
                 [MostCommonIndicatorShow showTheMostCommonAlertmessage:@"支付成功"];
-                self.paySuccess = @"1";
+//                self.paySuccess = @"1";
                 
 //                [[NSNotificationCenter defaultCenter] postNotificationName:@"SFBMpaySecurityControllerPop" object:nil];
             }else if ([resultStatus isEqualToString:@"4000"]){//支付宝签名错误导致
